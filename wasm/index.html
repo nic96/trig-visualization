@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trig Visualization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #191919;
+        display: flex;
+        justify-content: center;
+        min-width: 100vw;
+        min-height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+</style>
+<body>
+
+</body>
+<script type="module">
+    import init from './target/trig_visualization.js';
+
+    init();
+    //
+    // let canvas = null
+    // let aspectRatio = null
+    //
+    // function resize() {
+    //     if (aspectRatio && canvas) {
+    //         let width = document.body.clientWidth;
+    //         let height = Math.round(width / aspectRatio);
+    //         if (height > document.body.clientHeight) {
+    //             height = document.body.clientHeight;
+    //             width = height * aspectRatio;
+    //         }
+    //         if (width > 720) width = 720;
+    //         if (width < 360) width = 360;
+    //         height = Math.round(width / aspectRatio);
+    //         canvas.style.width = `${width}px`;
+    //         canvas.style.height = `${height}px`;
+    //     }
+    // }
+    //
+    // let interval = null;
+    // interval = window.setInterval(() => {
+    //     if (!canvas) {
+    //         canvas = document.querySelector('canvas');
+    //         if (canvas) {
+    //             aspectRatio = parseInt(canvas.getAttribute('width')) / parseInt(canvas.getAttribute('height'));
+    //             resize();
+    //             window.clearInterval(interval);
+    //         }
+    //     }
+    // }, 10);
+    //
+    // window.addEventListener('resize', resize);
+
+</script>
+</html>

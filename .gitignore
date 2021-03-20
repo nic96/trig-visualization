@@ -1,0 +1,12 @@
+# Rust
+/target
+/wasm/target/
+/wasm/assets/
+Cargo.lock
+
+# IDEs
+/.idea
+/.vscode
+
+# OS
+.DS_Store
