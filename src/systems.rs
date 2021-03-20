@@ -178,13 +178,12 @@ pub fn animate_system(
     time: Res<Time>,
     mut text: Query<&mut Text, With<ThetaText>>,
 ) {
-    if paused.0 {
-        return;
-    };
-
     for mut txt in text.iter_mut() {
         txt.value = format!("θ = {:.3} = {:.1}°", theta.0, theta.0.to_degrees()).into();
     }
+    if paused.0 {
+        return;
+    };
 
     theta.0 = wrap(theta.0 + time.delta_seconds() * 0.5, 0., 2. * PI);
 }
